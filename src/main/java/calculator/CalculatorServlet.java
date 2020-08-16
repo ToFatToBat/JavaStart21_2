@@ -9,5 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/calculator")
 class CalculatorServlet extends HttpServlet {
 
+    protected void doGet (HttpServletRequest request, HttpServletResponse response) {
+        String meter = request.getParameter("meter");
+        String cemtymeter = request.getParameter("centymeter");
+        String milimeter = request.getParameter("milimeter");
+
+
+    }
+
 
 }
