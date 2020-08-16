@@ -19,14 +19,14 @@ class CalculatorServlet extends HttpServlet {
         String centymeter = request.getParameter("centymeter");
         String milimeter = request.getParameter("milimeter");
 
-        pharseMeter = Integer.valueOf(meter);
+        pharseMeter =  Integer.valueOf(meter);
         pharseCentymeter = Integer.valueOf(centymeter);
         pharseMilimeter = Integer.valueOf(milimeter);
 
 
-
+        response.setContentType("tekst/html");
         java.io.PrintWriter writer = response.getWriter();
-        writer.println(pharseMeter);
+        writer.println(String.valueOf(pharseMeter));
 
 
         System.out.println(pharseCentymeter);
