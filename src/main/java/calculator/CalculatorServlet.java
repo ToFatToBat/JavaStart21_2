@@ -24,8 +24,9 @@ class CalculatorServlet extends HttpServlet {
         pharseMilimeter = Integer.valueOf(milimeter);
 
 
-            java.io.PrintWriter writer = response.getWriter();
-            writer.println(pharseMeter);
+
+        java.io.PrintWriter writer = response.getWriter();
+        writer.println(pharseMeter);
 
 
         System.out.println(pharseCentymeter);
